@@ -1,0 +1,238 @@
+/* Malecat site */
+
+header {
+    padding: 1rem 2rem 1rem 1rem;
+    background: #F2EBDF;
+    border: 2px dotted brown;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Playfair {
+    font-family: 'Playfair Display', serif;
+    color: brown;
+    font-size: 2.5rem;
+}
+.logo2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.logo3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+.leftheader {
+    flex-basis: 20%;
+    text-align: center;
+}
+.rightheader {
+    flex-basis: 80%;
+    padding-left: 0.5rem;
+    margin: 0;
+}
+.rightheader h1 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: black;
+    text-indent: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.wrapper {
+    text-align: center ;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    padding: 0.5rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    width: auto;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color:#F2EBDF;
+    border: 2px solid grey;
+    display: inline-block;
+}
+nav a {
+    padding: 0.7rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;  /* займет всею территорию */
+}
+nav a:link {
+    color: black;
+}
+nav a:hover {
+    background-color: whitesmoke;
+    color: red;
+}
+    
+p {
+    color:grey;
+    text-indent: 2rem;
+}
+.blur {
+    color: gray;
+    text-shadow: -1px -2px 0.5em;
+    text-indent: 0;
+    margin: 0;
+}
+footer {
+    background-color: #F2EBDF; 
+    padding: 10px;
+    text-align: center;
+    border-top: 2px dotted brown;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    display: inline-block;
+    padding: 1rem;
+}
+a:link {
+    text-decoration: none;
+    color: rgb(25, 122, 236)
+}
+a:hover {
+    color: red
+}
+
+.box1 {
+    border: 1px solid gray;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid gray;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.article-about {
+    text-align: left;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.article-diploma {
+    text-align: left;
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+    color: gray;
+}
+.floatleft {
+    float: left;
+    border: 0 solid black;
+    margin: 0 1rem 1rem 0;
+}
+.floatright {
+    float: right;
+    margin: 1rem 0 0 1rem;
+}
+article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-left {
+    text-align: left;
+     width: 19rem;
+}
+.smaller {
+    font-size: smaller; color:#594D43;
+}
+.img-center {
+    width: 19rem;
+    border: 2px solid grey;
+    text-align: center;
+}
+.center {text-align: center;}
+.clearfix:after {content: "";display: table; clear: both;}
+.fig { 
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color:black; /* Цвет подрисуночной подписи */
+    font-size: 0.7rem;
+    width: 19rem; 
+    margin-left: auto;
+}
+.wrapper-contacts {
+    border-top: 3px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 3rem;
+}
+.contacts {
+    flex-basis: 60%;
+}
+aside {
+    flex-basis: 40%;
+    margin: 2rem;
+}
+fieldset {
+    border: 1.5rem solid #F2EBDF;
+    padding-bottom: 2rem;
+}
+legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 0.3rem 0 0.3rem;
+}
+.contacts p {
+    text-indent: 0;
+}
+.contacts label {
+    margin: 0.5rem 0 0.2rem 0.1rem;
+    display: block;
+}
+.contacts-button {
+margin: 2rem 0.5rem 0.5rem 0.5rem;
+background-color:#F2EBDF;
+border: 2px solid grey;
+padding: 1rem;
+font-size: 1.3rem;
+cursor: pointer;
+}
+.contacts-button:hover{
+    color: red;
+    background-color: whitesmoke;
+}
+/*
+.contacts-field {
+    border: 2px solid green;
+    width: 20rem;
+    margin: 0 auto;
+} */
+textarea {
+    height: 10rem;
+    width: 20rem;
+    padding: 1rem;
+}
+input:not([type="radio"]){
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 20rem;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border: 1px solid lightgray;
+}
