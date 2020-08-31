@@ -5,16 +5,19 @@
 <!--        Версия от 2017-02-05-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <!-- Font Awesome fonts-->
+    <script src="https://kit.fontawesome.com/42bc4d0f17.js" crossorigin="anonymous"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
-    <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html">
 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="Крылова, cat, kitten, salecat, malecat, котята, кошка, кот, кошки, котенок, кот, вязка, клубкошек, выставкакошек, питомник, шотландские кошки, питомник кошек, купить котенка,">
     <meta name="description" content="malecat.ru - питомник британских и шотландских кошек в Москве">
     <title>Malecat - питомник шотландских и британских кошек</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <!--- <style>
 
             .button1__text { text-align: center; font-size: 1.6em;
@@ -82,16 +85,17 @@ try {
             <li><a href="#C1">О питомнике</a></li>
             <li><a href="#C2">Сертификаты</a></li>
             <li><a href="#C3">Наши выпускники</a></li>
+            <li><a href="cats.html">Котики</a></li>
             <li><a href="#C4">Контакты</a></li>
             </ul>
-         </nav>
             <!--/div>
             <div class="center">
             <a class="button1_type_link" role="link" href="http://catcatalog.ru/breeds">        
             <span class="button1__text">Перейти в каталог</span>
             </a>
             </div> -->
-         <div class="box1">
+        </nav>
+        <div class="box1">
             <h2 class="C1"> О питомнике</h2>
             <article class="article-about">
             <p>
@@ -145,43 +149,41 @@ try {
         <div class="wrapper-contacts">
             <section class="contacts">
                 <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
-                <input type="hidden" name="send_to" value="info@malecat.ru">
+                    <input type="hidden" name="send_to" value="info@malecat.ru">
+                    <fieldset>
+                        <legend id="C4">Контакты</legend>
+                        <p>Напишите мне письмо</p>
 
-                <fieldset>
-                    <legend id="C4">Контакты</legend>
-                    <p>Напишите мне письмо</p>
+                        <div>
+                            <label for="name"> 
+                            Ваше Имя
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Мое прекрасное имя">
+                        </div>
 
-                    <div>
-                        <label for="name"> 
-                        Ваше Имя
+                        <label for="phone"> 
+                        Номер телефона
                         </label>
-                        <input type="text" id="name" name="name" placeholder="Мое прекрасное имя">
-                    </div>
+                        <input type="tel" id="phone" name="phone" placeholder="7985000000">
 
-                    <label for="phone"> 
-                    Номер телефона
-                    </label>
-                    <input type="tel" id="phone" name="phone" placeholder="7985000000">
+                        <label for="email">
+                        Электронная почта 
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="myname@malecat.ru" required>
 
-                    <label for="email">
-                    Электронная почта 
-                    </label>
-                    <input type="email" id="email" name="email" placeholder="myname@malecat.ru" required>
+                        <label for="message">
+                        Текст сообщения
+                        </label>
+                        <textarea id=message name="message" maxlength="200"></textarea>
+                    </fieldset>
 
-                    <label for="message">
-                    Текст сообщения
-                    </label>
-                    <textarea id=message name="message" maxlength="200"></textarea>
-                </fieldset>
-
-                <button class="contacts-button" type="submit"> Отправить сообщение
-                </button>
-                        
+                    <button class="contacts-button" type="submit"> Отправить сообщение
+                    </button>
                 </form>
             </section>
-            <aside>
+            <!-- <aside>
                 <img src="images/Arny2.jpg" alt="Arny">
-            </aside>
+            </aside> -->
         </div>
 	    <footer>
             Мы в социальных сетях
@@ -195,6 +197,8 @@ try {
 
         </footer>
     </div>
-    <script src="js/forms.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+    <script src="js/gallery.js"></script>        
+    <script src="js/malecat.js"></script>   
 </body>
 </html>
