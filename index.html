@@ -148,7 +148,7 @@ try {
             </h2>
         <div class="wrapper-contacts">
             <section class="contacts">
-                <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+                <form action="" method="POST">
                     <input type="hidden" name="send_to" value="info@malecat.ru">
                     <fieldset>
                         <legend id="C4">Контакты</legend>
